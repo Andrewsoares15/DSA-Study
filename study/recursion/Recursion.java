@@ -1,15 +1,20 @@
 package study.recursion;
 
+import java.util.List;
+
 public class Recursion {
+    public static Integer num = 2;
 
-    static void procurePelaChave(int valor) {
-        if (valor <= 7) { //caso recursivo
-            System.out.println("Procure na lista até achar o 7");
-            procurePelaChave(valor + 1);
-        }else {
-            System.out.println("Achei um valor maior " + valor); // caso base
+    public static void searchToTheKey(List<Integer> list) {
+        num++;
+        for (Integer valor : list) {
+            if (valor != 7) {
+                System.out.println("Procure na lista até achar o 7");
+                searchToTheKey(List.of(num));  // Caso recursivo
+            } else {
+                System.out.println("Achei o " + valor);  // Caso base
+            }
         }
-
     }
 
     public static void imprima(int i){

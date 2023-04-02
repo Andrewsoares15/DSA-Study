@@ -15,6 +15,13 @@ public class Exercises {
         System.out.println(countRecursion);
     }
 
+    static int getFatorial(int x) {
+        if (x == 1)
+            return 1;
+        else
+            return x * (getFatorial(x - 1));
+    }
+
     static int sumRecursion(int[] intList) {
         if (intList.length == 2) {
             return intList[0] + intList[1]; // caso base
