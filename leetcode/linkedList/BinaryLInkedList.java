@@ -11,6 +11,15 @@ public class BinaryLInkedList {
         return Integer.parseInt(decimalNum, 2);
     }
 
+    static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode result = new ListNode();
+        while (list1.next != null || list2.next != null) {
+
+        }
+
+        return result;
+    }
+
 }
 
 class ListNode {

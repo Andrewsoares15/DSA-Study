@@ -9,7 +9,7 @@ public class SelectionSort {
             int menorIndice = i;
 
             for (int j = i + 1; j < list.length; j++){
-                if(list[j] < list[i]){
+                if(list[j] < list[menorIndice]){
                     menorIndice = j;
                 }
             }
@@ -21,7 +21,7 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int array[] = {64,25,12,22,11};
+        int array[] = {64,25,12,4,11};
 
         selectionSort(array);
 
