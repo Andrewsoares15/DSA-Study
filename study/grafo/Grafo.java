@@ -10,10 +10,9 @@ public class Grafo {
         graph.put("you", List.of(new Amigo(false, "Bastos"), new Amigo(false, "Rayele"), new Amigo(false, "Nenê")));
         graph.put("Bastos", Collections.emptyList());
         graph.put("Rayele", Collections.emptyList());
-        graph.put("Nenê", List.of(new Amigo(false, "Ribamar"), new Amigo(false, "Batman"), new Amigo(false, "Melyssa")));
+        graph.put("Nenê", List.of(new Amigo(false, "Ribamar"), new Amigo(true, "Batman"), new Amigo(false, "Melyssa")));
         graph.put("Ribamar", Collections.emptyList());
         graph.put("Batman", Collections.emptyList());
-        graph.put("Melyssa", Collections.emptyList());
 
         System.out.println(search("you"));
 
@@ -56,3 +55,6 @@ public class Grafo {
         }
     }
 }
+//acordar -> escovar os dentes -> tomar café da manhã -> embrulhar o lanche -> praticar exercício -> tomar banho -> trocar de roupa
+//uma arvore é um grafo, quando esse grafo é não direcionado.
+//Arvores são um subconjuntos de grafos. Assim uma arvoré sempre será um grafo, mas um grafo pode não ser uma arvore.

@@ -31,6 +31,7 @@ public class QuickSort {
                 Stream.concat(quickSort(menores).stream(), Stream.of(pivo)),
                 quickSort(maiores).stream()).collect(Collectors.toList());
 
+
     }
 
     static int[] quickSort(int[] arr) {
