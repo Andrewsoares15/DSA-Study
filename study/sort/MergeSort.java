@@ -5,6 +5,9 @@ public class MergeSort {
     public static void main(String[] args) {
         int[] ints = {6, 2, 4, 9, 12, 1};
         mergeSort(ints, 0, ints.length - 1);
+        for (int num: ints) {
+            System.out.println(num);
+        }
     }
 
     static void mergeSort(int[] v, int left, int right){
